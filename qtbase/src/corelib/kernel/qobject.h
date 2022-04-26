@@ -470,6 +470,8 @@ private:
 
 };
 
+typedef QObject PMObject;
+
 inline QMetaObject::Connection QObject::connect(const QObject *asender, const char *asignal,
                                             const char *amember, Qt::ConnectionType atype) const
 { return connect(asender, asignal, this, amember, atype); }
